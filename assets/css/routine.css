@@ -1,0 +1,86 @@
+.card-routine{
+	border-radius: 15px;
+}
+.card-header-bg{
+	padding: 20px 0px;
+	background: var(--main-color);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--white-color);
+}
+
+.card-header-bg h3{
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+.card-header-bg p{
+	font-weight: 400;
+	font-size: 1rem;
+}
+.card-body-bg{
+	background-color: var(--primary-color);
+}
+
+.box-warper{
+	display: flex;
+	color: var(--white-color);
+	justify-content: center;
+	align-items: center;
+}
+
+
+.box-warper .box{
+	width: 120px;
+	height: 60px;
+	margin: 10px 15px;
+	border-radius: 12px;
+	
+}
+.box-clr-dark{
+	background-color: #222222;
+}
+.box-clr{
+	background-color: var(--button-color);
+}
+
+.box-warper .box p{
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 38.73px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.box-warper .box-sub{
+	width: 120px;
+	height: 80px;
+	margin: 10px 15px;
+	border-radius: 12px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #222222;
+	line-height: 20px;
+	padding-top: 10px;
+}
+
+.box-warper .box-sub p{
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+.box-warper .box-clr-time{
+	background-color: #2D2B4D;
+	color: var(--white-color);
+}
+
+.box-warper .box-clr-sub{
+	background-color: var(--white-color);
+}

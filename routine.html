@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Admin Panel</title>
+	<!-- === font awesome css === -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<!-- === bootstrap css === -->
+	<link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+	<!-- === layouts css === -->
+	<link rel="stylesheet" href="assets/css/layouts.css">
+	<!-- === routine css === -->
+	<link rel="stylesheet" href="assets//css/routine.css">
+	<!-- === style css === -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- 	// main warper -->
+
+	<div class="main-warper">
+		<!-- NAVBAR START -->
+		<div class="header-container fixed-top">
+			<header class="header navbar navbar-expand-sm expand-header">
+				<div class="header-left d-flex">
+					<div class="logo">
+						Star Tech School
+					</div>
+					<a href="" class="sidebarCollapse" data-placement="bottm">
+						<span><i class="fa-solid fa-bars"></i></span>
+					</a>
+				</div>
+				<ul class="navbar-item d-flex ml-auto">
+					<li class="nav-item dropdown user-profile-dropdown">
+						<a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+							<img src="assets/images/icon/bell.png" class="icon" alt="bell iocn">
+							<p class="count">5</p>
+						</a>
+
+						<div class="dropdown-menu">
+							<div class="dp-main-menu">
+								<a href="#" class="dropdown-item message-item">
+									<img src="assets/images/icon/servers.png" class="user-error" alt="server-error">
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name"> Server reborted Server reborted</p>
+											<p class="error-time"> 20 Min ago</p>
+										</div>
+										<p class="status-link">
+											<span class="fas fa-times"></span>
+										</p>
+									</div>
+									
+								</a>
+							</div>
+
+							<div class="dp-main-menu">
+								<a href="#" class="dropdown-item message-item">
+									<img src="assets/images/icon/servers.png" class="user-error" alt="server-error">
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name"> Server reborted Server reborted</p>
+											<p class="error-time"> 20 Min ago</p>
+										</div>
+										<p class="status-link">
+											<span class="fas fa-times"></span>
+										</p>
+									</div>
+									
+								</a>
+							</div>
+							<div class="dp-main-menu">
+								<a href="#" class="dropdown-item message-item">
+									<img src="assets/images/icon/servers.png" class="user-error" alt="server-error">
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name"> Server reborted Server reborted</p>
+											<p class="error-time"> 20 Min ago</p>
+										</div>
+										<p class="status-link">
+											<span class="fas fa-times"></span>
+										</p>
+									</div>
+									
+								</a>
+							</div>
+							<div class="dp-main-menu">
+								<a href="#" class="dropdown-item message-item">
+									<img src="assets/images/icon/servers.png" class="user-error" alt="server-error">
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name"> Server reborted Server reborted</p>
+											<p class="error-time"> 20 Min ago</p>
+										</div>
+										<p class="status-link">
+											<span class="fas fa-times"></span>
+										</p>
+									</div>
+									
+								</a>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown user-profile-dropdown">
+						<a href="#" class="nav-link user">
+							<img src="assets/images/icon/setting.png" class="icon" alt="bell iocn">
+							
+						</a>
+					</li>
+
+					<li class="nav-item dropdown user-profile-dropdown">
+						<a href="#" class="nav-link user profile-user" data-bs-toggle="dropdown">
+							<img src="assets/images/icon/user.png" class="icon user" alt="user iocn">
+						</a>
+
+						<div class="dropdown-menu">
+							<div class="dp-main-menu">
+								<div class="dp-profile message-item">
+									<img src="assets/images/icon/user.png" class="user-error" alt="server-error">
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name">Admin</p>
+											<p class="error-time"> admin@gmail.com</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="dropdown-item message-item">
+									<span class="user-drop fa-light fa-user mr-5"></span>
+
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name">Your profile</p>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item message-item">
+									<span class="user-drop fa-duotone fa-wrench"></span>
+									<!-- <i class="fa-duotone fa-wrench"></i> -->
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name">Your setting</p>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item message-item">
+									<span class="user-drop fas fa-sign-out mr-5"></span>
+									<div class="error-info-dismis">
+										<div class="error-notifiy-info">
+											<p class="error-name">Logout</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</li>
+				</ul>
+			</header><!-- /header -->
+		</div>
+		<!-- NAVBAR END -->
+
+		<!-- SIDEBAR START -->
+		<div class="left-menu">
+			<div class="sidebar-content">
+				<nav class="animated bounceInDown">
+					<ul id="sidebar">
+						<li class="">
+							<a href="#"><i class="fas fa-home"></i>Dashborad</a>
+						</li>
+						<li class="sub-menu">
+							<a href="#"><i class="fas fa-cogs"></i>Settings
+								<div class="fa fa-caret-down right"></div>
+							</a>
+							<ul class="left-menu-dropdown">
+								<li>
+									<a href=""><i class="fas fa-user-circle"></i>Users</a>
+								</li>
+								<li>
+									<a href=""><i class="fas fa-check"></i>Role</a>
+								</li>
+								<li>
+									<a href=""><i class="fas fa-id-card"></i>Profile</a>
+								</li>
+								<li>
+									<a href=""><i class="fas fa-fingerprint"></i>Security &emp; Privicy</a>
+								</li>
+								<li>
+									<a href=""><i class="fas fa-key"></i>Password</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-box-open"></i>Widget</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-uikit"></i>Ui Elements</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-uikit"></i>Icons</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-uikit"></i>Buttons</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-uikit"></i>Popups</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-uikit"></i>Table</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-uikit"></i>Chart</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-chart-bar"></i>Advance Ui</a>
+						</li>
+						<li class="active">
+							<a href="#"><i class="fas fa-chart-bar"></i>Class Routine</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-opencart"></i>E-commerce</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-calendar-alt"></i>Calender</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-telegram-plane"></i>Form Elements</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-check-circle"></i>Todo List</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-book"></i>Documentions</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-envira"></i>Gallery</a>
+						</li>
+						
+						
+						<li>
+							<a href="#"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- SIDEBAR END -->
+
+
+
+		<!-- =========== CONTENT WARPER START ========= -->
+
+		<div class="content-warper">
+			<div class="dashboard-top-section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-8">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card card-routine">
+							<div class="card-header card-header-bg">
+								<h3>Class Routine</h3>
+								<p>Class 10</p>
+							</div>
+							<div class="card-body card-body-bg">
+								<div class="box-warper">
+									<div class="box box-clr-dark">
+										<p>Day/Period</p>
+									</div>
+									<div class="box box-clr">
+										<p>Sat</p>
+									</div>
+									<div class="box box-clr">
+										<p>Sun</p>
+									</div>
+									<div class="box box-clr">
+										<p>Mon</p>
+									</div>
+									<div class="box box-clr">
+										<p>Tue</p>
+									</div>
+									<div class="box box-clr">
+										<p>Wed</p>
+									</div>
+									<div class="box box-clr">
+										<p>Thu</p>
+									</div>
+								</div>
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+
+								<div class="box-warper">
+									<div class="box-sub box-clr-time">
+										<i class="fas fa-edit"></i>
+										<p>7:30-7:30 AM</p>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+									<div class="box-sub box-clr-sub">
+										<i class="fas fa-edit"></i>
+										<p>Bangla</p>
+										<span>teacher</span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =========== CONTENT WARPER END ========= -->
+
+
+
+	</div>
+
+
+
+
+
+
+	<!-- === jquery js === -->
+	<script src="assets/jquery/jquery.min.js"></script>
+	<!-- === bootstrap bundle js === -->
+	<script src="assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+	<!-- === main js === -->
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
